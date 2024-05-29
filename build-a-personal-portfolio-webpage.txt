@@ -1,0 +1,297 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Personal Portfolio Project</title>
+    </head>
+
+    <body>
+        <!--NavBar-->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Welcome Section-->
+        <div id="welcome-section">
+            <h1>Hey I am Shruti</h1>
+            <p>a web developer</p>
+        </div>
+
+        <!--Projects Section-->
+        <div id="projects">
+            <h2>These are some of my projects</h2>
+            <!--Container to hold the projects-->
+            <div id="project-grid">
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a href="#" class="project-tile">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                    <p>
+                        <span class="code"><</span>
+                        Tribute Page
+                        <span class="code">/></span>
+                    </p>
+                </a>
+            </div>
+            <a id="show-all" href="#">Show All</a>
+        </div>
+
+        <!--Profile Contacts-->
+        <div id="contacts">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+            <ul>
+                <li><a href="#" target="_blank" class="contact-link">Facebook</a></li>
+                <li><a href="#" target="_blank" id="profile-link" class="contact-link">GitHub</a></li>
+                <li><a href="#" target="_blank" class="contact-link">Twitter</a></li>
+                <li><a href="#" target="_blank" class="contact-link">Send a mail</a></li>
+                <li><a href="#" target="_blank" class="contact-link">Call me</a></li>
+            </ul>
+        </div>
+
+        <!--Footer for the website-->
+        <footer>
+            <p>
+                **This is just a fake portfolio. All the projects and contact details given are not real.
+            </p>
+            <p>Created for <a href="#" target="_blank">freeCodeCamp</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/*CSS for everything in the document*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+/*General CSS*/
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*Navbar Styling*/
+#navbar {
+    background-color: #f55e73;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 2px rgba(244, 247, 93, 0.5);
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+#navbar ul a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    transition: 0.5s;
+}
+
+#navbar ul a:hover {
+    background-color: #668ce4;
+}
+
+/*Welcome Section Styling*/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: linear-gradient(62deg, #3a3d40, #181719);
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+}
+
+#welcome-section p {
+    color: #31beab;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/*Projects Styling*/
+#projects {
+    background-color: #4e9edf;
+    text-align: center;
+    padding: 8rem 2rem;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    border-bottom: solid 0.2rem;
+    max-width: 50%;
+    margin: 0 auto 6rem auto;
+    padding-bottom: 5px;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 90px;
+}
+
+.project-tile {
+    background-color: #303841;
+    border-radius: 2px;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.project-tile:hover {
+    box-shadow: none;
+}
+
+.project-tile img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-tile p {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+.code {
+    color: #303841;
+}
+
+#show-all {
+    background-color: #303841;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+#show-all:hover {
+    box-shadow: none;
+}
+
+/*Contact Styling*/
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #303841;
+    height: 90vh;
+}
+
+#contacts h1 {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+}
+
+#contacts p {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+
+#contacts ul {
+    display: flex;
+}
+
+#contacts li {
+    margin-right: 3vw;
+    font-size: 1.8em;
+}
+
+/*Footer Styling*/
+footer {
+    display: flex;
+    background-color: #303841;
+    border-top: solid 4px #be3144;
+    padding: 3rem;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+/*End of CSS (Media Query)*/
+@media screen and (max-width: 420px) {
+    nav {
+        text-align: center;
+    }
+
+    #project-grid {
+        grid-template-columns: auto auto;
+    }
+
+    #contacts li {
+        font-size: 1.3em;
+    }
+}
+
+** end of undefined **
+
